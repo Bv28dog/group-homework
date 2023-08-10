@@ -32,6 +32,13 @@ body {
   transform: translateX(50px);
   transition: all 1s;
 }
+.mesange{
+  color:blue;
+  position:absolute;
+  left:calc(50% - 50px);
+  top: 120px;
+  font-size:30px;
+}
 
 .menu_btn {
     display: flex;
