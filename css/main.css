@@ -18,19 +18,23 @@ body {
     height: 200px;
     background-color: brown;
     border-radius: 50%; 
+    transition: all 1s;
 }
 .circle:hover{
   transform: translateY(-50px);
   transition: all 1s;
+  border-radius: 0px;
 }
 .box {
     width: 200px;
     height: 200px;
     background-color: black;
+    transition: all 1s;
 }
 .box:hover{
   transform: translateX(50px);
   transition: all 1s;
+  border-radius: 50%;
 }
 .mesange{
   color:blue;
