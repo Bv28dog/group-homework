@@ -1,5 +1,122 @@
 .header {
     max-width: 100%;
     height: 80px;
-    background: linear-gradient(to right, rgb(105, 104, 104),rgb(126, 31, 31));
+    background: linear-gradient(to right, rgb(139, 136, 136),rgb(179, 63, 63));
 }
+body {
+    background: linear-gradient(to right,rgb(100, 96, 96),rgb(34, 4, 4));
+}
+.content{}
+.flex_container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 50%;
+    
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+
+.menu_btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 1400px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu_btn > span,
+  .menu_btn > span::before,
+  .menu_btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(46, 46, 46);
+  }
+  .menu_btn > span::before {
+    content: "";
+    top: -10px;
+  }
+  .menu_btn > span::after {
+    content: "";
+    top: 10px;
+  }
+  
+  #menu_toggle {
+    opacity: 0;
+  }
+  .hamburger_menu {
+  }
+  .menu_item {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100px;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background: linear-gradient(to right,rgb(155, 54, 54),rgb(58, 5, 5));
+  }
+  .item {
+    color: black;
+    font-size: 30px;
+  }
+  li {
+    margin-bottom: 20px;
+  }
+  
+  .item:hover{
+    display: block;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50%;
+    color: yellow;
+    transition-duration: .25s;
+    transform: translateY(-20px);
+  }
+  a {
+    text-decoration: none;
+  }
+  #menu_toggle:checked ~ .menu_btn > span {
+    transform: rotate(45deg);
+  }
+  #menu_toggle:checked ~ .menu_btn > ::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu_toggle:checked ~ .menu_btn > ::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu_toggle:checked ~ .hamburger_menu > .menu_item {
+    visibility: visible;
+    right: 0;
+  }
+  .menu_btn > span,
+  .menu_btn > span::before,
+  .menu_btn > span::after{
+    transition-duration: .25s;
+  }
+  .menu_item{
+    transition-duration: .25s;
+  }
+  .menu_item{
+    transition-duration: .25s;
+  }
