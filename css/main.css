@@ -17,22 +17,28 @@ body {
     width: 200px;
     height: 200px;
     background-color: brown;
-    border-radius: 50%;
-    
+    border-radius: 50%; 
+}
+.circle:hover{
+  transform: translateY(-50px);
+  transition: all 1s;
 }
 .box {
     width: 200px;
     height: 200px;
     background-color: black;
 }
-
+.box:hover{
+  transform: translateX(50px);
+  transition: all 1s;
+}
 
 .menu_btn {
     display: flex;
     align-items: center;
     position: fixed;
     top: 20px;
-    left: 1400px;
+    right: 20px;
     width: 50px;
     height: 40px;
     cursor: pointer;
